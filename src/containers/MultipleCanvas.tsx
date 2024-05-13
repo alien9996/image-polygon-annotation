@@ -18,7 +18,7 @@ import filter from 'lodash/filter'
 import Button from '../components/Button'
 import '../css/area_setting.css';
 
-type MultipleCanvasProps = {
+export type MultipleCanvasProps = {
   data?: AreaSettingModel
   onCancel: () => void
   onSave: (savedData: AreaSettingModel) => void

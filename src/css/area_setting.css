@@ -1,0 +1,263 @@
+.area-setting .no-image-wrap {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto;
+}
+
+.area-setting .no-image-wrap>span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #95999b;
+  margin-bottom: 33px;
+}
+
+.area-setting .wrap-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 12px;
+}
+
+.area-setting .multiple-canvas {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  margin: 8px auto 16px;
+  padding: 24px;
+  background-color: white;
+}
+
+.area-setting .multiple-canvas .column-canvas {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+}
+
+.area-setting .stage-wrap {
+  display: flex;
+  justify-content: center;
+  background-color: #D8DCDE;
+  width: 100%;
+  max-width: 800px;
+  max-height: 450px;
+  overflow: hidden;
+}
+
+.area-setting .acc-wrap {
+  position: absolute;
+  right: 12px;
+}
+
+.area-setting .acc-wrap:nth-child(3) {
+  top: 12px;
+}
+
+.area-setting .acc-wrap:nth-child(4) {
+  top: calc(16px + 66px + 12px);
+}
+
+.area-setting .acc-wrap:nth-child(5) {
+  top: calc(16px + 66px + 16px + 66px + 12px);
+}
+
+.area-setting .acc-button {
+  min-width: unset;
+  padding: 4px;
+  width: 32px;
+  height: 32px;
+  background-color: rgba(31, 33, 36, 0.7);
+  color: white;
+  border-radius: unset;
+}
+
+.area-setting .acc-button.active {
+  background-color: #086bff;
+}
+
+.area-setting .acc-button.show {
+  display: block;
+}
+
+.area-setting .acc-button.hide {
+  display: none;
+}
+
+.area-setting .acc-button-delete {
+  color: black;
+  background-color: #f2f3f3;
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  border-radius: 2px;
+}
+
+.area-setting .acc-wrap .acc-button:last-child {
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.area-setting .acc-wrap .acc-button:first-child {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  margin-bottom: 2px;
+}
+
+.area-setting .tag-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 12px;
+}
+
+.area-setting .btn {
+  color: #63666a !important;
+}
+
+.area-setting .btn:last-child {
+  margin-left: 4px;
+}
+
+.area-setting .tag {
+  height: 30px;
+  color: #202122;
+  padding: 5px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: var(--font-noto-sans);
+  text-transform: unset;
+  border-radius: unset;
+}
+
+.area-setting .tag.tag-DANGER {
+  background-color: #ffd3db !important;
+  border-left: 4px solid #ff1414 !important;
+}
+
+.area-setting .tag.tag-PARKING {
+  background-color: #d6f2ae !important;
+  border-left: 4px solid #00ad1d !important;
+}
+
+.area-setting .tag.tag-TRAFFIC {
+  background-color: #d4e0fc !important;
+  border-left: 4px solid #0059b2 !important;
+}
+
+.area-setting .num-tag {
+  color: #95999b;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: var(--font-noto-sans);
+  margin-left: 16px;
+}
+
+.area-setting .info-wrap {
+  width: 280px;
+  height: 100%;
+  overflow: auto;
+}
+
+.area-setting .info-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 12px;
+  background-color: #ebeded;
+}
+
+.area-setting .info-header>span {
+  font-size: 14px;
+  font-weight: 700;
+  color: #3b3f40;
+  font-family: var(--font-noto-sans);
+  text-transform: uppercase;
+}
+
+.area-setting .info-header>button {
+  padding: 0px 4px;
+  text-transform: unset;
+  font-weight: 500;
+  font-family: var(--font-noto-sans);
+  text-decoration: underline;
+}
+
+.area-setting .info-list.tag-DANGER {
+  background-color: rgba(255, 211, 219, 0.33);
+}
+
+.area-setting .info-list.tag-PARKING {
+  background-color: rgba(241, 251, 228, 1);
+}
+
+.area-setting .info-list.tag-TRAFFIC {
+  background-color: rgba(238, 243, 254, 1);
+}
+
+.area-setting .info-list>div {
+  padding: 6px 8px;
+}
+
+.area-setting .info-list span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #63666a;
+}
+
+.area-setting .info-list .info-tag {
+  padding: 0px 8px;
+  border-radius: 2px;
+  color: white;
+  font-weight: 600;
+  font-size: 10px;
+  margin-right: 12px;
+}
+
+.area-setting .info-tag.tag-DANGER {
+  background-color: #ff1414;
+}
+
+.area-setting .info-tag.tag-PARKING {
+  background-color: #00ad1d;
+}
+
+.area-setting .info-tag.tag-TRAFFIC {
+  background-color: #0059b2;
+}
+
+.area-setting .info-list .info-delete {
+  padding: unset;
+  min-width: unset;
+  color: #63666a;
+  /* position: absolute;
+  right: 16px; */
+}
+
+.area-setting .btn-upload {
+  text-transform: unset;
+  width: 157px;
+}
+
+.area-setting .upload-file {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.area-setting .control-btn {
+  text-transform: unset;
+}

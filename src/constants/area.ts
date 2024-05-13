@@ -1,0 +1,77 @@
+export enum AreaZoneType {
+  AREA_ALERT = 'AREA_ALERT',
+  AREA_WARNING = 'AREA_WARNING',
+  POB_1 = 'POB_1',
+  POB_2 = 'POB_2',
+  SPEED_ESTIMATION = 'SPEED_ESTIMATION',
+  NO_PARKING = 'NO_PARKING',
+  TRAFFIC_1 = 'TRAFFIC_1',
+  TRAFFIC_2 = 'TRAFFIC_2',
+  FALLING_OBJECT_AREA = 'FALLING_OBJECT_AREA',
+}
+
+export const AreaZoneConfig = {
+  AREA_ALERT: {
+    type: AreaZoneType.AREA_ALERT,
+    label: 'Area Alert',
+    labelKey: 'SETUP_AREA_TYPE_AREAALERT',
+    strokeColor: '#FF3434',
+    fillColor: 'rgba(255, 52, 52, 0.1)',
+  },
+  AREA_WARNING: {
+    type: AreaZoneType.AREA_WARNING,
+    label: 'Area Warning',
+    labelKey: 'SETUP_AREA_TYPE_AREAWARNING',
+    strokeColor: '#FF9345',
+    fillColor: 'rgba(255, 147, 69, 0.1)',
+  },
+  POB_1: {
+    type: AreaZoneType.POB_1,
+    label: 'POB#1',
+    labelKey: 'SETUP_AREA_TYPE_POB#1',
+    strokeColor: '#00E100',
+    fillColor: 'rgba(0, 225, 0, 0.1)',
+  },
+  POB_2: {
+    type: AreaZoneType.POB_2,
+    label: 'POB#2',
+    labelKey: 'SETUP_AREA_TYPE_POB#2',
+    strokeColor: '#00B29D',
+    fillColor: 'rgba(0, 178, 157, 0.1)',
+  },
+  SPEED_ESTIMATION: {
+    type: AreaZoneType.SPEED_ESTIMATION,
+    label: 'Speed estimation',
+    labelKey: 'SETUP_AREA_TYPE_SPEED',
+    strokeColor: '#0079F3',
+    fillColor: 'rgba(0, 121, 243, 0.1)',
+  },
+  NO_PARKING: {
+    type: AreaZoneType.NO_PARKING,
+    label: 'No parking',
+    labelKey: 'SETUP_AREA_TYPE_PARKING',
+    strokeColor: '#7A7A7A',
+    fillColor: 'rgba(122, 122, 122, 0.1)',
+  },
+  TRAFFIC_1: {
+    type: AreaZoneType.TRAFFIC_1,
+    label: 'Traffic#1',
+    labelKey: 'SETUP_AREA_TYPE_TRAFFIC#1',
+    strokeColor: '#C400F6',
+    fillColor: 'rgba(196, 0, 246, 0.1)',
+  },
+  TRAFFIC_2: {
+    type: AreaZoneType.TRAFFIC_2,
+    label: 'Traffic#2',
+    labelKey: 'SETUP_AREA_TYPE_TRAFFIC#2',
+    strokeColor: '#F400CD',
+    fillColor: 'rgba(244, 0, 205, 0.1)',
+  },
+  FALLING_OBJECT_AREA: {
+    type: AreaZoneType.FALLING_OBJECT_AREA,
+    label: 'Falling object area',
+    labelKey: 'SETUP_AREA_TYPE_FALLING',
+    strokeColor: '#FF5D8E',
+    fillColor: 'rgba(255, 93, 142, 0.1)',
+  },
+}

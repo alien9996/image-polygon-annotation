@@ -22,8 +22,10 @@
   },
   "homepage": "https://github.com/alien9996/image-polygon-annotation#readme",
   "devDependencies": {
+    "@types/lodash": "^4.17.1",
     "@types/node": "^20.12.11",
     "@types/react": "^18.3.2",
+    "@types/uuid": "^9.0.8",
     "typescript": "^5.4.5"
   },
   "dependencies": {
